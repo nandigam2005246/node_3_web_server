@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
             callback("Search Not Found!!!", undefined)
         }
         else{
-            callback(undefined, 'It is Currently ' + body.current.temperature + ' degrees out. '+ 'It feels like '+ body.current.feelslike + ' degrees out.' )
+            callback(undefined, 'It is Currently ' + body.current.temperature + ' degrees out. '+ 'It feels like '+ body.current.feelslike + ' degrees out.' + "Humidity is"+ " " + body.current.humidity)
          }
        
        // callback(undefined, 'It is Currently ' + body.current.temperature + ' degrees out. '+ 'It feels like '+ body.current.feelslike + ' degrees out.' )
